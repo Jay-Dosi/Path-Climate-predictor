@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .routes import planner, forecast, recommend, geocoding
+import os
+from pathlib import Path
+
 
 app = FastAPI(title="PathPredict API", version="1.0.0")
 
